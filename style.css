@@ -887,3 +887,12 @@ hr {
   box-shadow: 50px 50px 100px #83c2c6,
     -50px -50px 100px #bdffff;
 }
+
+
+@media (max-width: 784px) {
+  .card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+  }
+}
