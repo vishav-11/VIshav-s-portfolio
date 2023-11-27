@@ -39,20 +39,19 @@ nav .fa {
   text-align: right;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
+.nav-links ul li {
   list-style: none;
-  margin: 0 20px;
+  display: inline-block;
+  padding: 5px 15px;
+  position: relative;
+
 }
 
-nav ul li a {
+.nav-links ul li a {
   text-decoration: none;
   color: black;
   font-size: 25px;
+  transition: 0.5s;
 }
 
 nav ul li a:hover {
@@ -215,14 +214,14 @@ nav ul li a:hover::after {
 /* ---------------MEDIA---SCREEN------------------------ */
 
 @media (max-width: 784px) {
-  .nav-links ul {
+  .nav-links ul li {
     display: block;
     padding: 20px;
-
   }
 
   .nav-links {
-    position: absolute;
+    position: fixed;
+    display: block;
     background: #02ad5a;
     height: 100vh;
     width: 200px;
@@ -230,7 +229,7 @@ nav ul li a:hover::after {
     right: -200px;
     text-align: left;
     z-index: 2;
-    transition: 2s;
+    transition: 0.3s;
     border-radius: 0 0 0 30px;
   }
 
@@ -807,20 +806,24 @@ hr {
 .ProBoxImage {
   width: 60%;
 }
-.ProBoxImage img{
+
+.ProBoxImage img {
   width: 100%;
   height: auto;
 }
-.myProject{
+
+.myProject {
   width: 100%;
   display: flex;
   margin: 70px 0 0 20px;
 }
-.projectDet{
+
+.projectDet {
   width: 80%;
   margin: 10px 30px 10px 30px;
 }
-.myProject a{
+
+.myProject a {
   text-decoration: none;
   color: green;
 }
@@ -829,14 +832,15 @@ hr {
 
 
 @media (max-width: 784px) {
-   .myProject {
+  .myProject {
     display: block;
     width: 100%;
     font-size: 15px;
     letter-spacing: normal;
     align-items: center;
   }
-  .ProBoxImage{
+
+  .ProBoxImage {
     width: 100%;
     display: flex;
     justify-content: center;
